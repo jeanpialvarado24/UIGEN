@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sleep 4 && start http://localhost:3000)",
+      "Bash(sleep 6 && start http://localhost:3000)",
+      "Bash(npm install:*)",
+      "Bash(start http://localhost:3002)",
+      "Bash(npm run:*)",
+      "Bash(start http://localhost:3000)",
+      "Bash(find /c/Users/Victus/UIGEN -name \".env*\" -type f 2>/dev/null | head -20)",
+      "Bash(find /c/Users/Victus/UIGEN/src/components -type f -name \"*.tsx\" -o -name \"*.ts\" -o -name \"*.jsx\" -o -name \"*.js\" 2>/dev/null | head -20)",
+      "Bash(taskkill //F //IM node.exe 2>/dev/null; echo \"done\")",
+      "Bash(npm audit:*)",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('next:', p.dependencies?.next || p.devDependencies?.next\\); console.log\\('ai:', p.dependencies?.ai || p.devDependencies?.ai\\);\")",
+      "Bash(npm view:*)",
+      "Bash(grep -r \"from 'ai'\" src/ --include=\"*.ts\" --include=\"*.tsx\" -l 2>&1)",
+      "Bash(grep -n \"from 'ai\" src/components/chat/MessageList.tsx src/lib/contexts/chat-context.tsx src/lib/tools/file-manager.ts src/app/api/chat/route.ts 2>&1)",
+      "Bash(npm test:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
